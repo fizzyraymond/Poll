@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vote for Your Favorite Activity</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vote for Your Favorite Activity</h1>
+  </header>
+  <main>
+    <div class="reset-button">
+        <button onclick="resetCounts()">Reset Counts</button>
+      </div>
+    <div class="option">
+      <h2>Sumo</h2>
+      <button class="vote-button" onclick="vote('sumo')">Vote</button>
+      <p class="vote-count" id="sumo-count">0</p>
+    </div>
+    <div class="option">
+      <h2>Paniq Room</h2>
+      <button class="vote-button" onclick="vote('paniq')">Vote</button>
+      <p class="vote-count" id="paniq-count">0</p>
+    </div>
+    <div class="option">
+      <h2>Go Karting</h2>
+      <button class="vote-button" onclick="vote('karting')">Vote</button>
+      <p class="vote-count" id="karting-count">0</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
